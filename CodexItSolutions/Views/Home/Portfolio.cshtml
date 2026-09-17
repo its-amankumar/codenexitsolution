@@ -1,0 +1,612 @@
+﻿@{
+    ViewData["Title"] = "Portfolio Page";
+}
+
+<!-- Page Title -->
+<div class="page-title accent-background">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio</h1>
+        <nav class="breadcrumbs">
+            <ol>
+              <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="current">Portfolio</li>
+            </ol>
+        </nav>
+    </div>
+</div><!-- End Page Title -->
+
+
+
+  <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p>
+                Explore some of the digital solutions and creative work
+                we provide for businesses and brands.
+            </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="isotope-layout"
+                 data-default-filter="*"
+                 data-layout="masonry"
+                 data-sort="original-order">
+
+                <!-- Portfolio Filters -->
+                <ul class="portfolio-filters isotope-filters"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-web">Web Development</li>
+                  @*   <li data-filter=".filter-software">Software</li> *@
+                    <li data-filter=".filter-design">Graphic Design</li>
+                   @*  <li data-filter=".filter-marketing">Digital Marketing</li> *@
+
+                </ul>
+                <!-- End Portfolio Filters -->
+
+
+                <div class="row gy-4 isotope-container"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
+
+                    <!-- Web Development 1 -->
+                    
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+                        <!-- Click anywhere on image -->
+                        <a href="https://juvenas.com/?srsltid=AfmBOoqLrYCFpfCRtuelII0XFX81G9-CEQrAixtw0BpN-t7tvSu0nxLo"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                            <img src="~/assets/img/masonry-portfolio/juvena.png"
+                                 class="img-fluid"
+                                 alt="Graphic Design">
+
+                        </a>
+
+                        <div class="portfolio-info">
+
+                          @*   <h4>Social Media Creatives</h4> *@
+
+                            <p>
+                                 Modern & Responsive Website
+                            </p>
+
+                            <!-- More Details -->
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                   
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+                        <!-- Click anywhere on image to open website -->
+                        <a href="https://elegantize.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                            <img src="~/assets/img/masonry-portfolio/elegantize.png"
+                                 class="img-fluid"
+                                 alt="Web Development Project">
+
+                        </a>
+
+                        <div class="portfolio-info">
+
+                            <h4>Business Website</h4>
+
+                            <p>
+                                Modern & Responsive Web Development
+                            </p>
+
+                            <!-- Preview Image -->
+                            <a href="~/assets/img/masonry-portfolio/elegantize.png"
+                                   title="Business Website"
+                                   data-gallery="portfolio-gallery-web"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <!-- More Details -->
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>                    <!-- End Portfolio Item -->
+                    <!-- Software 1 -->
+                  @*   <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-software">
+
+                        <img src="~/assets/img/masonry-portfolio/fitindia.png"
+                             class="img-fluid"
+                             alt="Software Development Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Business Software</h4>
+
+                            <p>
+                                Custom Software Development Solution
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/fitindia.png"
+                                   title="Business Software"
+                                   data-gallery="portfolio-gallery-software"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div> *@
+                    <!-- End Portfolio Item -->
+                    <!-- Graphic Design 1 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+                        <!-- Click anywhere on image -->
+                        <a href="https://fittindia.in/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                            <img src="~/assets/img/masonry-portfolio/fitindia.png"
+                                 class="img-fluid"
+                                 alt="Graphic Design Project">
+
+                        </a>
+
+                        <div class="portfolio-info">
+
+                                 <h4>E-commerce Website</h4>
+
+                            <p>
+                                Professional Business Website
+                            </p>
+                            <!-- Preview Image -->
+                            <a href="~/assets/img/masonry-portfolio/fitindia.png"
+                                   title="Brand Identity Design"
+                                   data-gallery="portfolio-gallery-design"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <!-- More Details -->
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- End Portfolio Item -->
+                    <!-- Web Development 2 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+                        <!-- Click anywhere on image to open website -->
+                        <a href="https://artistworld.co.in/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                            <img src="~/assets/img/masonry-portfolio/artiste.png"
+                                 class="img-fluid"
+                                 alt="Website Project">
+
+                        </a>
+
+                        <div class="portfolio-info">
+
+                            <h4>Corporate Website</h4>
+
+                            <p>
+                                Professional Business Website
+                            </p>
+
+                            <!-- Preview Image -->
+                            @* <a href="~/assets/img/masonry-portfolio/shreyans.png"
+                                   title="Corporate Website"
+                                   data-gallery="portfolio-gallery-web"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a> *@
+
+                            <!-- More Details -->
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- End Portfolio Item -->
+                    <!-- Software 2 -->
+               @*      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-software">
+
+                        <img src="~/assets/img/masonry-portfolio/fitindia.png"
+                             class="img-fluid"
+                             alt="Software Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Management System</h4>
+
+                            <p>
+                                Custom Business Management Software
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/fitindia.png"
+                                   title="Management System"
+                                   data-gallery="portfolio-gallery-software"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div> *@
+                    <!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+                        <img src="~/assets/img/masonry-portfolio/g1.jpg"
+                             class="img-fluid"
+                             alt="Branding Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Complete Brand Design</h4>
+
+                            <p>
+                                Branding, Logo & Creative Design
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/g1.jpg"
+                                   title="Complete Brand Design"
+                                   data-gallery="portfolio-gallery-design"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+                        <img src="~/assets/img/masonry-portfolio/g2.jpg"
+                             class="img-fluid"
+                             alt="Branding Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Complete Brand Design</h4>
+
+                            <p>
+                                Branding, Logo & Creative Design
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/g2.jpg"
+                                   title="Complete Brand Design"
+                                   data-gallery="portfolio-gallery-design"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+                        <img src="~/assets/img/masonry-portfolio/g3.jpg"
+                             class="img-fluid"
+                             alt="Branding Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Complete Brand Design</h4>
+
+                            <p>
+                                Branding, Logo & Creative Design
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/g3.jpg"
+                                   title="Complete Brand Design"
+                                   data-gallery="portfolio-gallery-design"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+                        <img src="~/assets/img/masonry-portfolio/g4.jpg"
+                             class="img-fluid"
+                             alt="Branding Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Complete Brand Design</h4>
+
+                            <p>
+                                Branding, Logo & Creative Design
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/g4.jpg"
+                                   title="Complete Brand Design"
+                                   data-gallery="portfolio-gallery-design"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- Graphic Design 2 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+
+                        <a href="https://www.shreyanshpackers.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                            <img src="~/assets/img/masonry-portfolio/shreyans.png"
+                                 class="img-fluid"
+                                 alt="Web Development Project">
+
+                        </a>
+
+                        <div class="portfolio-info">
+
+                            <h4>Business Website</h4>
+
+                            <p>
+                                Modern & Responsive Web Development
+                            </p>
+
+                            <!-- Live Website -->
+                            <a href="https://www.shreyanshpackers.com/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   title="Visit Website"
+                                   class="details-link">
+
+                                <i class="bi bi-box-arrow-up-right"></i>
+
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- End Portfolio Item -->
+                    <!-- Digital Marketing 1 -->
+                    @* <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+
+                        <img src="~/assets/img/masonry-portfolio/shreyans.png"
+                             class="img-fluid"
+                             alt="Digital Marketing">
+
+                        <div class="portfolio-info">
+
+                            <h4>Digital Marketing Campaign</h4>
+
+                            <p>
+                                Social Media Marketing & Branding
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/fitindia.png"
+                                   title="Digital Marketing Campaign"
+                                   data-gallery="portfolio-gallery-marketing"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div>  *@
+                    <!-- End Portfolio Item -->
+
+
+                    <!-- Video Editing -->
+                    <@* div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
+
+                        <img src="~/assets/img/masonry-portfolio/elegantize.png"
+                             class="img-fluid"
+                             alt="Video Editing">
+
+                        <div class="portfolio-info">
+
+                            <h4>Promotional Video</h4>
+
+                            <p>
+                                Professional Video Editing & Content Creation
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/elegantize.png"
+                                   title="Promotional Video"
+                                   data-gallery="portfolio-gallery-marketing"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div> *@
+                    <!-- End Portfolio Item -->
+                    <!-- Branding -->
+              @*       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+
+                        <img src="~/assets/img/masonry-portfolio/fitindia.png"
+                             class="img-fluid"
+                             alt="Branding Project">
+
+                        <div class="portfolio-info">
+
+                            <h4>Complete Brand Design</h4>
+
+                            <p>
+                                Branding, Logo & Creative Design
+                            </p>
+
+                            <a href="~/assets/img/masonry-portfolio/fitindia.png"
+                                   title="Complete Brand Design"
+                                   data-gallery="portfolio-gallery-design"
+                                   class="glightbox preview-link">
+
+                                <i class="bi bi-zoom-in"></i>
+
+                            </a>
+
+                            <a asp-controller="Home"
+                                   asp-action="Portfolio"
+                                   title="More Details"
+                                   class="details-link">
+
+                                <i class="bi bi-link-45deg"></i>
+
+                            </a>
+
+                        </div>
+                    </div> *@
+                    <!-- End Portfolio Item -->
+
+                </div>
+                <!-- End Portfolio Container -->
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- /Portfolio Section -->
