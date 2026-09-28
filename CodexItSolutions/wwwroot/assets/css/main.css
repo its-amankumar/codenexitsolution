@@ -276,6 +276,7 @@ h6 {
     color: var(--nav-hover-color);
   }
 
+
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -2711,6 +2712,21 @@ section,
 
 @media (max-width: 768px) {
 
+
+    .Callbuttn {
+        position: fixed;
+        left:12px;
+       
+    }
+    .Whatsupbuttn {
+        position: fixed;
+        left:0px;
+       
+        
+    }
+
+ 
+
     /* Desktop carousel hide */
     .desktop-hero {
         display: none !important;
@@ -2801,7 +2817,8 @@ section,
     #about .inner-title {
         text-align: center;
         margin-top: -20px;
-        font-size: 23px;
+      /*  font-size: 23px;*/
+        font-size: 1.94rem;
         line-height: 1.3;
     }
 }

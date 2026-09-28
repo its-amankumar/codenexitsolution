@@ -113,9 +113,9 @@
                     Your Trusted Digital Solutions Partner
                 </h2>
 
-                <p class="inner-subtitle">
+                @* <p class="inner-subtitle">
                     We turn your ideas into powerful digital experiences.
-                </p>
+                </p> *@
 
                 <div class="our-story">
 
@@ -974,7 +974,12 @@
                                             }
                                         }
                                     }
+
+
                 </script>
+
+
+
 
 
                 <div class="swiper-wrapper">
@@ -1122,5 +1127,19 @@
 
     </section>
     <!-- /Testimonials Section -->
+
+
+    <script>
+        document.querySelectorAll('.navmenu a').forEach(function (link) {
+    link.addEventListener('click', function () {
+
+        document.querySelectorAll('.navmenu a').forEach(function (item) {
+            item.classList.remove('active');
+        });
+
+        this.classList.add('active');
+    });
+});
+    </script>
 
 </main>
