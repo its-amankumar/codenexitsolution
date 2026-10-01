@@ -35,7 +35,11 @@ namespace CodexItSolutions.Controllers
         {
             return View();
         }
-       
+        public IActionResult PrivacyPolicy()
+        {
+            return View();
+        }
+
 
         public IActionResult Contact()
         {
